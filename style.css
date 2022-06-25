@@ -1,0 +1,136 @@
+:root {
+    /* Primary */
+    --bright-orange: hsl(31, 77%, 52%); /* sedans */
+    --dark-cyan: hsl(184, 100%, 22%); /* suvs */
+    --very-dark-cyan: hsl(179, 100%, 13%); /* luxury */
+    /* Neutrals */
+    --transparent-white: hsla(0, 0%, 100%, 0.75); /* paragraphs */
+    --very-light-gray: hsl(0, 0%, 95%) /* background, headings, buttons */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    background-color: var(--very-light-gray);
+}
+
+.container {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin: auto;
+   /* border-radius: 10px; */
+    overflow: hidden;
+    padding: 20px;
+}
+
+.first-container {
+    background-color: var(--bright-orange);
+    border-radius: 10px 10px 0 0;
+}
+
+.second-container {
+    background-color: var(--dark-cyan);
+    
+}
+
+.third-container {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 0 10px 10px;
+}
+
+
+h2 {
+    color: var(--very-light-gray);
+    margin: 30px;
+    text-align: left;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+p {
+    color: var(--transparent-white);
+    margin: 30px;
+    text-align: left;
+    line-height: 1.6;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+img {
+    margin: 35px;
+    width: 65px;
+    margin-bottom: 20px;
+}
+
+
+button {
+    background-color: var(--very-light-gray);
+    border: 2px solid var(--very-light-gray);
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin: 40px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.button1 {
+    color: var(--bright-orange);
+}
+
+.button2 {
+    color: var(--dark-cyan);
+}
+
+.button3 {
+    color: var(--very-dark-cyan);
+}
+
+button:hover {
+    background-color: transparent; 
+    color: var(--very-light-gray);
+ }
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin: 30px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 992px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        max-width: 900px;
+        margin: auto;
+    }  
+
+    .first-container {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .third-container {
+        border-radius: 0 10px 10px 0;
+    }
+}
+
+@media (min-weight: 1200px) {
+    .container {
+        max-width: 1100px;
+    }
+}
